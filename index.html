@@ -1,412 +1,69 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<!--
-  To change the theme, change the class on the html tag below to one of:
-  - theme-auto: Automatically switches based on user's system preferences
-  - theme-light: Forces light theme
-  - theme-dark: Forces dark theme
--->
-
-<html class="theme-auto" lang="en"> <!-- Update`class="theme-auto" with your preference -->
-
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Page Title - Change this to your name/brand (50-60 characters recommended) -->
-    <title>LittleLink</title>
-    <link rel="icon" type="image/x-icon" href="/images/avatar.png"> <!-- Update this with your own favicon -->
-
-    <!-- Meta Description - Write a description (150-160 characters recommended) -->
-    <meta name="description" content="Replace this with your own, this appears in search results and when sharing.">
-
-    <!-- Keywords -->
-    <meta name="keywords" content="your name, industry, and specialties">
-
-    <!-- Canonical URL - Helps prevent duplicate content issues -->
-    <meta rel="canonical" href="https://dev-xay.space">
-
-    <!-- Author Information -->
-    <meta name="author" content="Chhay">
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/brands.css">
-
-    <!-- LittleLink Extended Stylesheet (Optional) -->
-    <!-- <link rel="stylesheet" href="css/brands-extended.css"> -->
-    <!-- Learn more at https://github.com/sethcottle/littlelink-extended.
-         Remove comments if you've added LittleLink Extended dependencies -->
-
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dok Vanchhay | Links</title>
+  <meta name="description" content="Python Developer & Content Creator. Links to my projects and socials.">
+  <meta name="author" content="Dok Vanchhay">
+  
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/brands.css"> </head>
 
 <body>
-
-    <div class="container">
-        <div class="column">
-
-            <!--
-              By default, the Avatar is rounded. Use the following:
-              - avatar--rounded: Automatically rounds the image
-              - avatar--soft: Slightly rounds the image
-              - avatar--none: Removes any rounding
-
-              Be sure to replace the src with your own image path and update the alt text
-            -->
-            <img class="avatar avatar--rounded" src="images/avatar.png" srcset="images/avatar@2x.png 2x" alt="LittleLink">
-
-            <!-- Replace with your name or brand -->
-            <h1>
-              <div>LittleLink</div>
-            </h1>
-
-            <!-- Add a short description about yourself or your brand -->
-            <p>An open source DIY Linktree alternative.</p>
-
-            <!-- All your buttons go here -->
-            <div class="button-stack" role="navigation">
-
-              <!-- Default LittleLink -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/littlelink.svg" alt="LittleLink Logo">LittleLink</a>
-
-              <!-- Amazon -->
-              <a class="button button-amazon" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/amazon.svg" alt="Amazon Wishlist Logo">Amazon Wishlist</a>
-
-              <!-- Amazon Music -->
-              <a class="button button-amazon-music" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/amazon-music.svg" alt="Amazon Music Logo">Listen on Amazon Music</a>
-
-              <!-- Apple App Store -->
-              <a class="button button-appstore" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/apple.svg" alt="Apple Logo">Apple App Store</a>
-
-              <!-- Apple Invites -->
-              <a class="button button-invites" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/apple-invites.svg" alt="Apple Invites Logo">Apple Invites</a>
-
-              <!-- Apple Music -->
-              <a class="button button-apple-music" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/apple-music.svg" alt="Apple Music Logo">Listen on Apple Music</a>
-
-              <!-- Apple Music Alternate -->
-              <a class="button button-apple-music-alt" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/apple-music-alt.svg" alt="Apple Music Logo">Listen on Apple Music</a>
-
-              <!-- Apple Podcasts -->
-              <a class="button button-apple-podcasts" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/apple-podcasts.svg" alt="Apple Podcasts Logo">Listen on Apple Podcasts</a>
-
-              <!-- Apple Podcasts Alternate -->
-              <a class="button button-apple-podcasts-alt" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/apple-podcasts-alt.svg" alt="Apple Podcasts Logo">Listen on Apple Podcasts</a>
-
-              <!-- Bandcamp -->
-              <a class="button button-bandcamp" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/bandcamp.svg" alt="Bandcamp Logo">Bandcamp</a>
-
-              <!-- Behance -->
-              <a class="button button-behance" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/behance.svg" alt="Behance Logo">Behance</a>
-
-              <!-- Bluesky -->
-              <a class="button button-bluesky" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/bluesky.svg" alt="Bluesky Logo">Bluesky</a>
-
-              <!-- Bluesky Alt -->
-              <a class="button button-bluesky-alt" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/bluesky-alt.svg" alt="Bluesky Logo">Bluesky</a>
-
-              <!-- Buy Me A Coffee -->
-              <a class="button button-coffee" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/buy-me-a-coffee.svg" alt="Buy Me A Coffee Logo">Buy Me A Coffee</a>
-
-              <!-- Cal.com -->
-              <a class="button button-cal" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/cal.svg" alt="Cal.com Logo">Schedule with Cal.com</a>
-
-              <!-- Calendly -->
-              <a class="button button-calendly" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/calendly.svg" alt="Calendly Logo">Schedule with Calendly</a>
-
-              <!-- Cash App -->
-              <a class="button button-cash-app" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/cash-app-dollar.svg" alt="Cash App Logo">Cash App</a>
-
-              <!-- Dev.to -->
-              <a class="button button-dev-to" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/dev-to.svg" alt="Dev.to Logo">Dev.to</a>
-
-              <!-- Discogs -->
-              <a class="button button-discogs" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/discogs.svg" alt="Discogs Logo">Discogs</a>
-
-              <!-- Discogs Alt -->
-              <a class="button button-discogs-alt" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/discogs-alt.svg" alt="Discogs Logo">Discogs</a>
-
-              <!-- Discord -->
-              <a class="button button-discord" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/discord.svg" alt="Discord Logo">Discord</a>
-
-              <!-- Dribbble -->
-              <a class="button button-dribbble" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/dribbble.svg" alt="Dribbble Logo">Dribbble</a>
-
-              <!-- Etsy -->
-              <a class="button button-etsy" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/etsy.svg" alt="Etsy Logo">Shop on Etsy</a>
-
-              <!-- Facebook -->
-              <a class="button button-faceb" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/facebook.svg" alt="Facebook Logo">Find us on Facebook</a>
-
-              <!-- Facebook Messenger -->
-              <a class="button button-messenger" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/messenger.svg" alt="Messenger Logo">Chat on Messenger</a>
-
-              <!-- Figma -->
-              <a class="button button-figma" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/figma.svg" alt="Figma Logo">Figma Community</a>
-
-              <!-- Fiverr -->
-              <a class="button button-fiverr" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/fiverr.svg" alt="Fiverr Logo">Fiverr Gig</a>
-
-              <!-- Flickr -->
-              <a class="button button-flickr" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/flickr.svg" alt="Flickr Logo">Flickr</a>
-
-              <!-- GitHub -->
-              <a class="button button-github" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/github.svg" alt="GitHub Logo">GitHub</a>
-
-              <!-- GitLab -->
-              <a class="button button-gitlab" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/gitlab.svg" alt="GitLab Logo">GitLab</a>
-
-              <!-- GoFundMe -->
-              <a class="button button-gofundme" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/gofundme.svg" alt="GoFundMe Logo">GoFundMe</a>
-
-              <!-- Goodreads -->
-              <a class="button button-goodreads" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/goodreads.svg" alt="Goodreads Logo">Goodreads</a>
-
-              <!-- Google Drive -->
-              <a class="button button-google-black" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/google-drive.svg" alt="Google Drive Logo">View in Google Drive</a>
-
-              <!-- Google Play Store -->
-              <a class="button button-playstore" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/google-play.svg" alt="Google Play Store Logo">Google Play Store</a>
-
-              <!-- Google Scholar -->
-              <a class="button button-google-scholar" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/google-scholar.svg" alt="Google Scholar Logo">Google Scholar</a>
-
-              <!-- Hashnode -->
-              <a class="button button-hashnode" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/hashnode.svg" alt="Hashnode Logo">Hashnode</a>
-
-              <!-- Instagram -->
-              <a class="button button-instagram" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/instagram.svg" alt="Instagram Logo">Instagram</a>
-
-              <!-- Kick -->
-              <a class="button button-kick" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/kick.svg" alt="Kick Logo">Kick</a>
-
-              <!-- Kick Alt -->
-              <a class="button button-kick-alt" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/kick-alt.svg" alt="Kick Logo">Kick</a>
-
-              <!-- Kickstarter -->
-              <a class="button button-kickstarter" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/kickstarter.svg" alt="Kickstarter Logo">Kickstarter</a>
-
-              <!-- Kit -->
-              <a class="button button-kit" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/kit.svg" alt="Kit Logo">Kit</a>
-
-              <!-- Ko-fi -->
-              <a class="button button-ko-fi" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/ko-fi.svg" alt="Ko-fi Logo">Support me on Ko-fi</a>
-
-              <!-- Last.fm -->
-              <a class="button button-last-fm" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/last-fm.svg" alt="">Last.fm</a>
-
-              <!-- Letterboxd -->
-              <a class="button button-letterboxd" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/letterboxd.svg" alt="">Letterboxd</a>
-
-              <!-- Line -->
-              <a class="button button-line" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/line.svg" alt="Line Logo">Line</a>
-
-              <!-- LinkedIn -->
-              <a class="button button-linked" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/linkedin.svg" alt="LinkedIn Logo">LinkedIn</a>
-
-              <!-- Mailchimp -->
-              <a class="button button-mailchimp" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/mailchimp.svg" alt="Mailchimp Logo">Mailchimp</a>
-
-              <!-- Mastodon -->
-              <a class="button button-mastodon" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/mastodon.svg" alt="Mastodon Logo">Mastodon</a>
-
-              <!-- Matrix -->
-              <a class="button button-matrix" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/matrix.svg" alt="Matrix Logo">Matrix</a>
-
-              <!-- Medium -->
-              <a class="button button-medium" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/medium.svg" alt="Medium Logo">Medium</a>
-
-              <!-- Meetup -->
-              <a class="button button-meetup" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/meetup.svg" alt="Meetup Logo">Meetup</a>
-
-              <!-- Meetup Alt -->
-              <a class="button button-meetup-alt" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/meetup-alt.svg" alt="Meetup Logo">Meetup</a>
-
-              <!-- Microsoft Store -->
-              <a class="button button-microsoft" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/microsoft.svg" alt="Microsoft Logo">Get it from Microsoft</a>
-
-              <!-- Notion -->
-              <a class="button button-notion" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/notion.svg" alt="Notion Logo">Notion</a>
-
-              <!-- Obsidian -->
-              <a class="button button-obsidian" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/obsidian.svg" alt="Obsidian Logo">Obsidian</a>
-
-              <!-- OnlyFans -->
-              <a class="button button-onlyfans" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/onlyfans.svg" alt="OnlyFans Logo">OnlyFans (18+)</a>
-
-              <!-- Patreon -->
-              <a class="button button-patreon" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/patreon.svg" alt="Patreon Logo">Patreon</a>
-
-              <!-- PayPal -->
-              <a class="button button-paypal" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/paypal.svg" alt="PayPal Logo">PayPal</a>
-
-              <!-- Pinterest -->
-              <a class="button button-pinterest" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/pinterest.svg" alt="Pinterest Logo">Pinterest</a>
-
-              <!-- Product Hunt -->
-              <a class="button button-product-hunt" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/product-hunt.svg" alt="Product Hunt Logo">Product Hunt</a>
-
-              <!-- Reddit -->
-              <a class="button button-reddit" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/reddit.svg" alt="Reddit Logo">Reddit</a>
-
-              <!-- Shop -->
-              <a class="button button-shop" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/shop.svg" alt="Shop Logo">Buy with Shop</a>
-
-              <!-- Signal -->
-              <a class="button button-signal" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/signal.svg" alt="Signal Logo">Signal</a>
-
-              <!-- Signal Alt -->
-              <a class="button button-signal-alt" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/signal-alt.svg" alt="Signal Logo">Signal</a>
-
-              <!-- Slack -->
-              <a class="button button-slack" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/slack.svg" alt="Slack Logo">Join Slack</a>
-
-              <!-- Snapchat -->
-              <a class="button button-snapchat" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/snapchat.svg" alt="Snapchat Logo">Snapchat</a>
-
-              <!-- SoundCloud -->
-              <a class="button button-soundcloud" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/soundcloud.svg" alt="SoundCloud Logo">SoundCloud</a>
-
-              <!-- Spotify -->
-              <a class="button button-spotify" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/spotify.svg" alt="Spotify Logo">Listen on Spotify</a>
-
-              <!-- Spotify Alt -->
-              <a class="button button-spotify-alt" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/spotify-alt.svg" alt="Spotify Logo">Listen on Spotify</a>
-
-              <!-- Square -->
-              <a class="button button-square" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/square.svg" alt="Square Logo">Buy with Square</a>
-
-              <!-- Stack Overflow -->
-              <a class="button button-stack-overflow" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/stack-overflow.svg" alt="Stack Overflow Logo">Stack Overflow</a>
-
-              <!-- Steam -->
-              <a class="button button-steam" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/steam.svg" alt="Steam Logo">Steam</a>
-
-              <!-- Steam Alt -->
-              <a class="button button-steam-alt" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/steam.svg" alt="Steam Logo">Steam</a>
-
-              <!-- Strava -->
-              <a class="button button-strava" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/strava.svg" alt="Strava Logo">Strava</a>
-
-              <!-- Substack -->
-              <a class="button button-substack" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/substack.svg" alt="Substack Logo">Substack</a>
-
-              <!-- Telegram -->
-              <a class="button button-telegram" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/telegram.svg" alt="Telegram Logo">Telegram</a>
-
-              <!-- Threads -->
-              <a class="button button-threads" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/threads.svg" alt="Threads Logo">Threads</a>
-
-              <!-- Threema -->
-              <a class="button button-threema" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/threema.svg" alt="Threema Logo">Threema</a>
-
-              <!-- TikTok -->
-              <a class="button button-tiktok" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/tiktok.svg" alt="TikTok Logo">TikTok</a>
-
-              <!-- Trello -->
-              <a class="button button-trello" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/trello.svg" alt="Trello Logo">Trello</a>
-
-              <!-- Tumblr -->
-              <a class="button button-tumb" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/tumblr.svg" alt="Tumblr Logo">Tumblr</a>
-
-              <!-- Twitch -->
-              <a class="button button-twitch" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/twitch.svg" alt="Twitch Logo">Twitch</a>
-
-              <!-- Unsplash -->
-              <a class="button button-unsplash" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/unsplash.svg" alt="Unsplash Logo">Unsplash</a>
-
-              <!-- Venmo -->
-              <a class="button button-venmo" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/venmo.svg" alt="Venmo Logo">Venmo</a>
-
-              <!-- Vimeo -->
-              <a class="button button-vimeo" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/vimeo.svg" alt="Vimeo Logo">Vimeo</a>
-
-              <!-- VSCO -->
-              <a class="button button-vsco" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/vsco.svg" alt="VSCO Logo">VSCO</a>
-
-              <!-- WhatsApp -->
-              <a class="button button-whatsapp" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/whatsapp.svg" alt="WhatsApp Logo">WhatsApp</a>
-
-              <!-- WordPress -->
-              <a class="button button-wordpress" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/wordpress.svg" alt="WordPress Logo">WordPress</a>
-
-              <!-- X -->
-              <a class="button button-x" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/x.svg" alt="X Logo">Follow on X</a>
-
-              <!-- YouTube -->
-              <a class="button button-yt" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/youtube.svg" alt="YouTube Logo">YouTube</a>
-
-              <!-- YouTube Alt -->
-              <a class="button button-yt-alt" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/youtube-alt.svg" alt="YouTube Logo">YouTube</a>
-
-              <!-- YouTube Music -->
-              <a class="button button-yt" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/youtube-music.svg" alt="YouTube Music Logo">Listen on YouTube Music</a>
-
-              <!-- Zoom -->
-              <a class="button button-zoom" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/zoom.svg" alt="Zoom Logo">Join Zoom Webinar</a>
-
-              <!-- Generic Blog -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-blog.svg" alt="Blog Icon">Read our blog</a>
-
-              <!-- Generic Calendar -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-calendar.svg" alt="Calendar Icon">Event RSVP</a>
-
-              <!-- Generic Cloud -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-cloud.svg" alt="Cloud Icon">Download File</a>
-
-              <!-- Generic Code -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-code.svg" alt="Code Icon">View the code</a>
-
-              <!-- Generic Computer -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-computer.svg" alt="Computer Icon">Homelab Setup</a>
-
-              <!-- Generic Email -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-email.svg" alt="Email Icon">Email Us</a>
-
-              <!-- Generic Email Alt -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-email-alt.svg" alt="Email Icon">Email Us</a>
-
-              <!-- Generic Homepage -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-homepage.svg" alt="Homepage Icon">Visit Homepage</a>
-
-              <!-- Generic Map -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-map.svg" alt="Map Icon">Get Directions</a>
-
-              <!-- Generic Phone -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-phone.svg" alt="Phone Icon">Call Us</a>
-
-              <!-- Generic Review -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-review.svg" alt="Review Icon">Leave us a review</a>
-
-              <!-- Generic RSS -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-rss.svg" alt="RSS Icon">RSS Subscribe</a>
-
-              <!-- Generic Shopping Bag -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-shopping-bag.svg" alt="Shopping Bag Icon">Visit Our Shop</a>
-
-              <!-- Generic Shopping Tag -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-shopping-tag.svg" alt="Shopping Tag Icon">10% Discount</a>
-
-              <!-- Generic SMS -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-sms.svg" alt="SMS Icon">Send us a message</a>
-
-              <!-- Generic Website -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-website.svg" alt="Website Icon">Visit Website</a>
-
-              <!-- LittleLink Extended -->
-              <a class="button button-default" href="https://github.com/sethcottle/littlelink-extended" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/littlelink.svg" alt="LittleLink Logo">LittleLink Extended</a>
-
+  <div class="container">
+    <div class="column">
+      
+      <img src="images/avatar.png" alt="Dok Vanchhay Profile Picture" width="125" height="125">
+
+      <h1>Dok Vanchhay</h1>
+
+      <p>Python Developer | Tech Enthusiast <br> Building tools, bots, and creating content. 🚀</p>
+
+      <a class="button" href="https://dev-xay.space" target="_blank" rel="noopener">
+        <svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22c-5.523 0-10-4.477-10-10S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-2-10h4v4h-4v-4z"/></svg>
+        Website (Dev Xay)
+      </a>
+
+      <a class="button button-youtube" href="https://www.youtube.com/@Dokvanchhay" target="_blank" rel="noopener">
+        <svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        YouTube
+      </a>
+
+      <a class="button button-facebook" href="https://web.facebook.com/Xay20" target="_blank" rel="noopener">
+        <svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        Facebook
+      </a>
+
+      <a class="button button-instagram" href="https://www.instagram.com/dok.vanchhay/" target="_blank" rel="noopener">
+        <svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.36-.2 6.78-2.618 6.98-6.98.058-1.28.072-1.689.072-4.948 0-3.259-.014-3.668-.072-4.948-.2-4.358-2.618-6.78-6.98-6.98-1.28-.058-1.689-.072-4.948-.072zM12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+        Instagram
+      </a>
+      
+      <a class="button button-x" href="https://x.com/dok_vanchhay" target="_blank" rel="noopener">
+        <svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+        X (Twitter)
+      </a>
+
+      <a class="button button-threads" href="https://www.threads.net/@dok.vanchhay" target="_blank" rel="noopener">
+        <svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.74 13.784c.162-.648.24-1.332.24-2.035 0-3.793-2.797-6.076-6.175-6.076-3.743 0-6.275 2.584-6.275 6.435 0 3.522 2.375 6.128 5.753 6.128 1.826 0 3.246-.667 4.14-1.722v1.517c-.98 1.07-2.665 1.777-4.437 1.777-4.57 0-7.868-3.414-7.868-8.157 0-4.665 3.535-7.96 8.358-7.96 4.773 0 7.96 3.018 7.96 7.93 0 4.965-2.617 8.003-6.164 8.003-1.69 0-2.738-.79-2.738-2.06 0-2.227 3.08-3.08 3.195-6.697-.107.49-.333 1.05-.724 1.455-.658.68-1.57 1.01-2.457 1.01-1.71 0-2.822-1.28-2.822-3.14 0-2.094 1.48-3.42 3.633-3.42 1.405 0 2.417.68 2.87 1.7.135-.615.174-1.125.174-1.536 0-2.254-1.272-3.692-3.834-3.692-2.392 0-4.425 1.637-4.425 4.54 0 2.766 1.815 4.636 4.26 4.636 1.157 0 2.12-.413 2.72-1.025l-.396 1.844c-.75.29-1.63.456-2.55.456-3.264 0-5.186-2.03-5.186-4.945 0-3.13 2.18-5.32 5.09-5.32 1.957 0 3.336 1.258 3.336 3.26 0 2.57-2.408 3.32-3.55 3.32-.47 0-.817-.05-1.03-.133.093 1.25.968 2.11 2.303 2.11 1.08 0 1.968-.62 2.26-1.594z"/></svg>
+        Threads
+      </a>
+
+      <a class="button button-tiktok" href="https://www.tiktok.com/@xingo121" target="_blank" rel="noopener">
+        <svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.35-1.17 1.09-1.07 1.93.03.58.49 1.15 1.07 1.23.81.22 1.78-.34 2.08-1.13.54-1.28.53-2.68.53-4.09 0-2.75-.01-5.51-.01-8.26z"/></svg>
+        TikTok
+      </a>
+
+      <br>
+      <div class="footer">
+        <p>Copyright © 2025 Dok Vanchhay</p>
       </div>
-
-      <!-- Feel free to add your own footer information, including updating `privacy.html` to reflect how your LittleLink fork is set up -->
-      <footer>
-        <a href="privacy.html">Privacy Policy</a> | Build your own by forking <a href="https://littlelink.io" target="_blank" rel="noopener">LittleLink</a>
-      </footer>
 
     </div>
   </div>
-
 </body>
-
 </html>
