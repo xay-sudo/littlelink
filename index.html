@@ -19,54 +19,51 @@
         background-color: #0d1117 !important; /* Professional Dark Background */
         color: #ffffff !important;           /* White Text */
     }
-    
-    /* Ensure Title and Bio are readable */
     h1 { color: #ffffff !important; }
-    p { color: #c9d1d9 !important; }       /* Slightly softer white for bio */
-
-    /* Footer text */
+    p { color: #c9d1d9 !important; }
     .footer p { color: #8b949e !important; }
 
     /* --- 2. BRAND COLORS (The "Frames") --- */
+    /* New "Call Me" black style */
+    .button-call {
+        background-color: #000000 !important;
+        color: white !important;
+        border: 1px solid #ffffff; /* White border to pop on dark background */
+    }
+
     .button-website { background-color: #007aff !important; color: white !important; }
     .button-telegram { background-color: #0088cc !important; color: white !important; }
     .button-youtube { background-color: #ff0000 !important; color: white !important; }
     .button-facebook { background-color: #1877f2 !important; color: white !important; }
     .button-instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important; color: white !important; }
     .button-tiktok { background-color: #fe2c55 !important; color: white !important; }
-    .button-x { background-color: #000000 !important; color: white !important; border: 1px solid #333; /* border makes black button visible on black bg */ }
-    .button-threads { background-color: #000000 !important; color: white !important; border: 1px solid #333; }
+    /* Added white borders to black social buttons for consistency */
+    .button-x { background-color: #000000 !important; color: white !important; border: 1px solid #ffffff; }
+    .button-threads { background-color: #000000 !important; color: white !important; border: 1px solid #ffffff; }
 
     /* --- 3. ANIMATIONS --- */
     @keyframes fadeInUp {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
     @keyframes floatAvatar {
       0% { transform: translateY(0px); }
       50% { transform: translateY(-8px); }
       100% { transform: translateY(0px); }
     }
-
-    /* Apply Floating to Avatar */
     img[alt*="Profile Picture"] {
       animation: floatAvatar 4s ease-in-out infinite;
-      border: 3px solid #30363d; /* Nice border for avatar in dark mode */
+      border: 3px solid #30363d; 
       border-radius: 50%;
     }
-
-    /* Button Base Styles for Animation */
     .button {
       opacity: 0; 
       animation: fadeInUp 0.6s ease-out forwards;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-
-    /* Hover Effect */
     .button:hover {
       transform: scale(1.03); 
-      box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1); /* White glow shadow for dark mode */
+      box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
     }
 
     /* Staggered Delays */
@@ -78,13 +75,14 @@
     .button:nth-of-type(6) { animation-delay: 0.6s; }
     .button:nth-of-type(7) { animation-delay: 0.7s; }
     .button:nth-of-type(8) { animation-delay: 0.8s; }
+    .button:nth-of-type(9) { animation-delay: 0.9s; }
 
     /* --- 4. SNOW EFFECT CSS --- */
     .snowflake {
       position: fixed;
       top: -10px;
       z-index: 9999;
-      color: #fff; /* White snow */
+      color: #fff;
       font-size: 1em;
       pointer-events: none;
       user-select: none;
@@ -92,7 +90,6 @@
       animation-timing-function: linear;
       animation-fill-mode: forwards;
     }
-
     @keyframes fall {
       to { transform: translateY(105vh); }
     }
@@ -108,6 +105,13 @@
       <h1>Dok Vanchhay</h1>
 
       <p>Python Developer | Tech Enthusiast <br> Building tools, bots, and creating content. 🚀</p>
+
+      <a class="button button-call" href="tel:+855979595393">
+        <svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+            <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1.01A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/>
+        </svg>
+        Call Me +855979595393
+      </a>
 
       <a class="button button-website" href="https://dev-xay.space" target="_blank" rel="noopener">
         <svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22c-5.523 0-10-4.477-10-10S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-2-10h4v4h-4v-4z"/></svg>
