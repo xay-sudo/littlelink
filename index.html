@@ -20,9 +20,28 @@
         color: #ffffff !important;
         perspective: 1000px; 
         overflow-x: hidden;
+        font-family: sans-serif; /* Added generic font for safety */
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
     }
     p { color: #c9d1d9 !important; }
-    .footer p { color: #8b949e !important; }
+    .footer p { color: #8b949e !important; font-size: 0.8em; margin-top: 20px; }
+    a { text-decoration: none; }
 
     /* --- 2. GLITCH EFFECT FOR NAME --- */
     .glitch {
@@ -99,6 +118,20 @@
     }
 
     /* --- 4. BRAND COLORS & BUTTON STYLES --- */
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: transform 0.2s, box-shadow 0.2s;
+        box-sizing: border-box;
+    }
+    .icon { width: 24px; height: 24px; margin-right: 10px; }
+
     .button-call { background-color: #000000 !important; color: white !important; border: 1px solid #ffffff; }
     .button-website { background-color: #007aff !important; color: white !important; }
     .button-telegram { background-color: #2AABEE !important; color: white !important; }
@@ -163,6 +196,13 @@
     @keyframes fall {
       to { transform: translateY(105vh); }
     }
+    
+    /* Click Animation Helper */
+    .clicking-active {
+        transform: scale(0.95) !important;
+        box-shadow: 0 0 15px #ffffff !important;
+        border-color: #00ffff !important;
+    }
   </style>
 </head>
 
@@ -189,9 +229,9 @@
         Website (Dev Xay)
       </a>
 
-      <a class="button button-telegram tilt-card" href="https://t.me/Dokvanchhay" target="_blank" rel="noopener">
+      <a class="button button-telegram tilt-card" id="auto-target" href="https://t.me/Dokvanchhay" target="_blank" rel="noopener">
         <svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M22.264 2.426a2.317 2.317 0 0 0-2.36-.172L1.982 10.19a2.342 2.342 0 0 0-.398 4.085l4.858 3.374 1.852 5.636c.327.996 1.722 1.172 2.287.292l2.837-4.417 5.514 4.07a2.338 2.338 0 0 0 3.599-1.465l3.52-16.57a2.322 2.322 0 0 0-3.787-2.77z"/></svg>
-        Telegram
+        Telegram (Auto-Opening...)
       </a>
 
       <a class="button button-youtube tilt-card" href="https://www.youtube.com/@Dokvanchhay" target="_blank" rel="noopener">
@@ -286,13 +326,28 @@
       });
     });
     
-    // --- 4. AUTO REDIRECT (3 SECONDS) ---
-    // Change the link inside quotes to your TikTok or Instagram
-    const targetLink = "https://t.me/Dokvanchhay"; 
+    // --- 4. AUTO CLICKER (TELEGRAM BUTTON) ---
+    // Instead of window.location, we simulate a physical click on the button element.
+    const autoClickDelay = 3000; // 3 Seconds
     
     setTimeout(() => {
-      window.location.href = targetLink;
-    }, 3000); 
+        const tgButton = document.getElementById('auto-target'); // Find the button
+        
+        if (tgButton) {
+            // Optional: Visual effect to show it's being clicked
+            tgButton.classList.add('clicking-active');
+            
+            // Wait a tiny bit for visual effect then click
+            setTimeout(() => {
+                tgButton.click(); // The Click!
+                
+                // Fallback: If click doesn't work (popup blocker), force redirect
+                // setTimeout(() => {
+                //     window.location.href = tgButton.href; 
+                // }, 500);
+            }, 300);
+        }
+    }, autoClickDelay);
 
   </script>
 </body>
