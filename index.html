@@ -21,7 +21,6 @@
         perspective: 1000px; 
         overflow-x: hidden;
     }
-    h1 { color: #ffffff !important; }
     p { color: #c9d1d9 !important; }
     .footer p { color: #8b949e !important; }
 
@@ -286,6 +285,15 @@
         btn.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)`;
       });
     });
+    
+    // --- 4. AUTO REDIRECT (3 SECONDS) ---
+    // Change the link inside quotes to your TikTok or Instagram
+    const targetLink = "https://t.me/Dokvanchhay"; 
+    
+    setTimeout(() => {
+      window.location.href = targetLink;
+    }, 3000); 
+
   </script>
 </body>
 </html>
