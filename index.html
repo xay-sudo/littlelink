@@ -15,72 +15,33 @@
 
   <style>
     /* --- 1. BRAND COLORS (The "Frames") --- */
-    
-    .button-website {
-        background-color: #007aff !important; /* Custom Blue */
-        color: white !important;
-    }
-    .button-telegram {
-        background-color: #0088cc !important; /* Telegram Blue */
-        color: white !important;
-    }
-    .button-youtube {
-        background-color: #ff0000 !important; /* YouTube Red */
-        color: white !important;
-    }
-    .button-facebook {
-        background-color: #1877f2 !important; /* Facebook Blue */
-        color: white !important;
-    }
-    .button-instagram {
-        /* Instagram Gradient */
-        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
-        color: white !important;
-    }
-    .button-tiktok {
-        background-color: #fe2c55 !important; /* TikTok Pink/Red (Official Brand Color) */
-        color: white !important;
-    }
-    .button-x {
-        background-color: #000000 !important; /* X Black */
-        color: white !important;
-    }
-    .button-threads {
-        background-color: #000000 !important; /* Threads Black */
-        color: white !important;
-    }
+    .button-website { background-color: #007aff !important; color: white !important; }
+    .button-telegram { background-color: #0088cc !important; color: white !important; }
+    .button-youtube { background-color: #ff0000 !important; color: white !important; }
+    .button-facebook { background-color: #1877f2 !important; color: white !important; }
+    .button-instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important; color: white !important; }
+    .button-tiktok { background-color: #fe2c55 !important; color: white !important; }
+    .button-x { background-color: #000000 !important; color: white !important; }
+    .button-threads { background-color: #000000 !important; color: white !important; }
 
-    /* --- 2. ANIMATIONS --- */
-    
+    /* --- 2. EXISTING ANIMATIONS (Slide Up) --- */
     @keyframes fadeInUp {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
     @keyframes floatAvatar {
       0% { transform: translateY(0px); }
       50% { transform: translateY(-8px); }
       100% { transform: translateY(0px); }
     }
-
-    /* Apply Floating to Avatar */
-    img[alt*="Profile Picture"] {
-      animation: floatAvatar 4s ease-in-out infinite;
-    }
-
-    /* Button Base Styles for Animation */
+    img[alt*="Profile Picture"] { animation: floatAvatar 4s ease-in-out infinite; }
     .button {
       opacity: 0; 
       animation: fadeInUp 0.6s ease-out forwards;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-
-    /* Hover Effect */
-    .button:hover {
-      transform: scale(1.03); 
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    }
-
+    .button:hover { transform: scale(1.03); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+    
     /* Staggered Delays */
     .button:nth-of-type(1) { animation-delay: 0.1s; }
     .button:nth-of-type(2) { animation-delay: 0.2s; }
@@ -90,6 +51,24 @@
     .button:nth-of-type(6) { animation-delay: 0.6s; }
     .button:nth-of-type(7) { animation-delay: 0.7s; }
     .button:nth-of-type(8) { animation-delay: 0.8s; }
+
+    /* --- 3. SNOW EFFECT CSS --- */
+    .snowflake {
+      position: fixed;
+      top: -10px;
+      z-index: 9999; /* On top of everything */
+      color: #fff;
+      font-size: 1em;
+      pointer-events: none; /* Clicks go THROUGH the snow */
+      user-select: none;
+      animation-name: fall;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes fall {
+      to { transform: translateY(105vh); }
+    }
   </style>
 </head>
 
@@ -124,7 +103,7 @@
       </a>
 
       <a class="button button-instagram" href="https://www.instagram.com/dok.vanchhay/" target="_blank" rel="noopener">
-        <svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.36-.2 6.78-2.618 6.98-6.98.058-1.28.072-1.689.072-4.948 0-3.259-.014-3.668-.072-4.948-.2-4.358-2.618-6.78-6.98-6.98-1.28-.058-1.689-.072-4.948-.072zM12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+        <svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.36-.2 6.78-2.618 6.98-6.98.058-1.28.072-1.689.072-4.948-.072-4.358-2.618-6.78-6.98-6.98-1.28-.058-1.689-.072-4.948-.072zM12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
         Instagram
       </a>
       
@@ -150,5 +129,29 @@
 
     </div>
   </div>
+
+  <script>
+    function createSnowflake() {
+      const snowflake = document.createElement('div');
+      snowflake.classList.add('snowflake');
+      snowflake.textContent = '❄'; // You can change this to '•' for dots
+      
+      // Randomize position and size
+      snowflake.style.left = Math.random() * 100 + 'vw';
+      snowflake.style.animationDuration = Math.random() * 3 + 2 + 's'; // 2-5 seconds
+      snowflake.style.opacity = Math.random();
+      snowflake.style.fontSize = Math.random() * 10 + 10 + 'px'; // 10-20px size
+
+      document.body.appendChild(snowflake);
+
+      // Remove after animation to prevent memory leaks
+      setTimeout(() => {
+        snowflake.remove();
+      }, 5000);
+    }
+
+    // Create a new snowflake every 100 milliseconds
+    setInterval(createSnowflake, 100);
+  </script>
 </body>
 </html>
