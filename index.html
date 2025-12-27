@@ -18,7 +18,7 @@
     body {
         background-color: #0d1117 !important;
         color: #ffffff !important;
-        perspective: 1000px; /* Needed for 3D Tilt */
+        perspective: 1000px; 
         overflow-x: hidden;
     }
     p { color: #c9d1d9 !important; }
@@ -109,41 +109,27 @@
     .button-x { background-color: #000000 !important; color: white !important; border: 1px solid #ffffff; }
     .button-threads { background-color: #000000 !important; color: white !important; border: 1px solid #ffffff; }
 
-    /* --- 5. AVATAR ANIMATIONS (FLOAT + NEON PULSE) --- */
-    
-    /* Define the Neon Pulse Keyframes */
+    /* --- 5. AVATAR ANIMATIONS --- */
     @keyframes neonPulse {
-      from {
-        border-color: #00ffff; /* Cyan */
-        box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff; /* Soft glow */
-      }
-      to {
-        border-color: #80ffff; /* Slightly brighter border center */
-        box-shadow: 0 0 20px #00ffff, 0 0 35px #00ffff; /* Intense glow spread */
-      }
+      from { border-color: #00ffff; box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff; }
+      to { border-color: #80ffff; box-shadow: 0 0 20px #00ffff, 0 0 35px #00ffff; }
     }
-
-    /* Define the Float Keyframes */
     @keyframes floatAvatar {
       0% { transform: translateY(0px); }
       50% { transform: translateY(-8px); }
       100% { transform: translateY(0px); }
     }
-    
-    /* Apply both animations to the avatar */
     img[alt*="Profile Picture"] {
-      /* Combine animations: float (4s loop) and pulse (1.5s breathing loop) */
       animation: floatAvatar 4s ease-in-out infinite, neonPulse 1.5s ease-in-out infinite alternate;
       border-radius: 50%;
-      border: 3px solid #00ffff; /* Base cyan border */
+      border: 3px solid #00ffff; 
     }
 
-    /* --- 6. BUTTON LOAD & TILT ANIMATIONS --- */
+    /* --- 6. BUTTON ANIMATIONS --- */
     @keyframes fadeInUp {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-    
     .button {
       opacity: 0; 
       animation: fadeInUp 0.6s ease-out forwards;
@@ -151,8 +137,6 @@
       transform-style: preserve-3d;
       will-change: transform;
     }
-
-    /* Staggered Delays for Load Animation */
     .button:nth-of-type(1) { animation-delay: 0.1s; }
     .button:nth-of-type(2) { animation-delay: 0.2s; }
     .button:nth-of-type(3) { animation-delay: 0.3s; }
@@ -163,7 +147,7 @@
     .button:nth-of-type(8) { animation-delay: 0.8s; }
     .button:nth-of-type(9) { animation-delay: 0.9s; }
 
-    /* --- 7. SNOW EFFECT CSS --- */
+    /* --- 7. SNOW EFFECT --- */
     .snowflake {
       position: fixed;
       top: -10px;
@@ -221,7 +205,7 @@
       </a>
 
       <a class="button button-instagram tilt-card" href="https://www.instagram.com/dok.vanchhay/" target="_blank" rel="noopener">
-        <svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.36-.2 6.78-2.618 6.98-6.98.058-1.28.072-1.689.072-4.948-.072-4.358-2.618-6.78-6.98-6.98-1.28-.058-1.689-.072-4.948-.072zM12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+        <svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.36-.2 6.78-2.618 6.98-6.98.058-1.28.072-1.689.072-4.948-.072-4.358-2.618-6.78-6.98-6.98-1.28-.058-1.689-.072-4.948-.072zM12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
         Instagram
       </a>
       
@@ -301,6 +285,15 @@
         btn.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)`;
       });
     });
+    
+    // --- 4. AUTO REDIRECT (3 SECONDS) ---
+    // Change the link inside quotes to your TikTok or Instagram
+    const targetLink = "https://t.me/Dokvanchhay"; 
+    
+    setTimeout(() => {
+      window.location.href = targetLink;
+    }, 3000); 
+
   </script>
 </body>
 </html>
