@@ -14,15 +14,46 @@
   <link rel="stylesheet" href="css/brands.css">
 
   <style>
-    /* --- Custom Brand Colors --- */
-    /* Defining a custom blue color for the Website button */
+    /* --- 1. BRAND COLORS (The "Frames") --- */
+    /* Forces these colors even if brands.css is missing */
+
     .button-website {
-        background-color: #007aff; /* Nice bright blue */
+        background-color: #007aff !important; /* Custom Blue */
+        color: white !important;
+    }
+    .button-telegram {
+        background-color: #0088cc !important; /* Telegram Blue */
+        color: white !important;
+    }
+    .button-youtube {
+        background-color: #ff0000 !important; /* YouTube Red */
+        color: white !important;
+    }
+    .button-facebook {
+        background-color: #1877f2 !important; /* Facebook Blue */
+        color: white !important;
+    }
+    .button-instagram {
+        /* Instagram Gradient */
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
+        color: white !important;
+    }
+    .button-x {
+        background-color: #000000 !important; /* X Black */
+        color: white !important;
+    }
+    .button-threads {
+        background-color: #000000 !important; /* Threads Black */
+        color: white !important;
+    }
+    .button-tiktok {
+        background-color: #000000 !important; /* TikTok Black */
         color: white !important;
     }
 
-    /* --- Animations --- */
-    /* 1. Animation Definitions */
+    /* --- 2. ANIMATIONS --- */
+    
+    /* Animation Definitions */
     @keyframes fadeInUp {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
@@ -34,25 +65,25 @@
       100% { transform: translateY(0px); }
     }
 
-    /* 2. Apply Floating to Avatar */
+    /* Apply Floating to Avatar */
     img[alt*="Profile Picture"] {
       animation: floatAvatar 4s ease-in-out infinite;
     }
 
-    /* 3. Button Base Styles for Animation */
+    /* Button Base Styles for Animation */
     .button {
       opacity: 0; /* Hidden before animation starts */
       animation: fadeInUp 0.6s ease-out forwards;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    /* 4. Hover Effect */
+    /* Hover Effect */
     .button:hover {
       transform: scale(1.03); /* Grows slightly */
       box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Adds shadow depth */
     }
 
-    /* 5. Staggered Delays (One by One effect) */
+    /* Staggered Delays (Cascade Effect) */
     .button:nth-of-type(1) { animation-delay: 0.1s; }
     .button:nth-of-type(2) { animation-delay: 0.2s; }
     .button:nth-of-type(3) { animation-delay: 0.3s; }
