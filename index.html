@@ -21,6 +21,7 @@
         perspective: 1000px; 
         overflow-x: hidden;
     }
+    h1 { color: #ffffff !important; }
     p { color: #c9d1d9 !important; }
     .footer p { color: #8b949e !important; }
 
@@ -287,11 +288,13 @@
     });
     
     // --- 4. AUTO REDIRECT (3 SECONDS) ---
-    // Change the link inside quotes to your TikTok or Instagram
+    // Change this link to your Telegram
     const targetLink = "https://t.me/Dokvanchhay"; 
     
     setTimeout(() => {
-      window.location.href = targetLink;
+      // NOTE: Browsers often block automatic new tabs (window.open). 
+      // If it doesn't open in a new tab, it's due to popup blockers.
+      window.open(targetLink, '_blank');
     }, 3000); 
 
   </script>
