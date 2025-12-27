@@ -15,8 +15,7 @@
 
   <style>
     /* --- 1. BRAND COLORS (The "Frames") --- */
-    /* Forces these colors even if brands.css is missing */
-
+    
     .button-website {
         background-color: #007aff !important; /* Custom Blue */
         color: white !important;
@@ -38,6 +37,10 @@
         background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
         color: white !important;
     }
+    .button-tiktok {
+        background-color: #fe2c55 !important; /* TikTok Pink/Red (Official Brand Color) */
+        color: white !important;
+    }
     .button-x {
         background-color: #000000 !important; /* X Black */
         color: white !important;
@@ -46,14 +49,9 @@
         background-color: #000000 !important; /* Threads Black */
         color: white !important;
     }
-    .button-tiktok {
-        background-color: #000000 !important; /* TikTok Black */
-        color: white !important;
-    }
 
     /* --- 2. ANIMATIONS --- */
     
-    /* Animation Definitions */
     @keyframes fadeInUp {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
@@ -72,18 +70,18 @@
 
     /* Button Base Styles for Animation */
     .button {
-      opacity: 0; /* Hidden before animation starts */
+      opacity: 0; 
       animation: fadeInUp 0.6s ease-out forwards;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     /* Hover Effect */
     .button:hover {
-      transform: scale(1.03); /* Grows slightly */
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Adds shadow depth */
+      transform: scale(1.03); 
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     }
 
-    /* Staggered Delays (Cascade Effect) */
+    /* Staggered Delays */
     .button:nth-of-type(1) { animation-delay: 0.1s; }
     .button:nth-of-type(2) { animation-delay: 0.2s; }
     .button:nth-of-type(3) { animation-delay: 0.3s; }
@@ -130,6 +128,11 @@
         Instagram
       </a>
       
+      <a class="button button-tiktok" href="https://www.tiktok.com/@xingo121" target="_blank" rel="noopener">
+        <svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.35-1.17 1.09-1.07 1.93.03.58.49 1.15 1.07 1.23.81.22 1.78-.34 2.08-1.13.54-1.28.53-2.68.53-4.09 0-2.75-.01-5.51-.01-8.26z"/></svg>
+        TikTok
+      </a>
+
       <a class="button button-x" href="https://x.com/dok_vanchhay" target="_blank" rel="noopener">
         <svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
         X (Twitter)
@@ -138,11 +141,6 @@
       <a class="button button-threads" href="https://www.threads.net/@dok.vanchhay" target="_blank" rel="noopener">
         <svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.74 13.784c.162-.648.24-1.332.24-2.035 0-3.793-2.797-6.076-6.175-6.076-3.743 0-6.275 2.584-6.275 6.435 0 3.522 2.375 6.128 5.753 6.128 1.826 0 3.246-.667 4.14-1.722v1.517c-.98 1.07-2.665 1.777-4.437 1.777-4.57 0-7.868-3.414-7.868-8.157 0-4.665 3.535-7.96 8.358-7.96 4.773 0 7.96 3.018 7.96 7.93 0 4.965-2.617 8.003-6.164 8.003-1.69 0-2.738-.79-2.738-2.06 0-2.227 3.08-3.08 3.195-6.697-.107.49-.333 1.05-.724 1.455-.658.68-1.57 1.01-2.457 1.01-1.71 0-2.822-1.28-2.822-3.14 0-2.094 1.48-3.42 3.633-3.42 1.405 0 2.417.68 2.87 1.7.135-.615.174-1.125.174-1.536 0-2.254-1.272-3.692-3.834-3.692-2.392 0-4.425 1.637-4.425 4.54 0 2.766 1.815 4.636 4.26 4.636 1.157 0 2.12-.413 2.72-1.025l-.396 1.844c-.75.29-1.63.456-2.55.456-3.264 0-5.186-2.03-5.186-4.945 0-3.13 2.18-5.32 5.09-5.32 1.957 0 3.336 1.258 3.336 3.26 0 2.57-2.408 3.32-3.55 3.32-.47 0-.817-.05-1.03-.133.093 1.25.968 2.11 2.303 2.11 1.08 0 1.968-.62 2.26-1.594z"/></svg>
         Threads
-      </a>
-
-      <a class="button button-tiktok" href="https://www.tiktok.com/@xingo121" target="_blank" rel="noopener">
-        <svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.35-1.17 1.09-1.07 1.93.03.58.49 1.15 1.07 1.23.81.22 1.78-.34 2.08-1.13.54-1.28.53-2.68.53-4.09 0-2.75-.01-5.51-.01-8.26z"/></svg>
-        TikTok
       </a>
 
       <br>
